@@ -8,7 +8,7 @@ Naughty Cat Writeup
 
 ## [Challenge](https://ctflearn.com/challenge/890)
 
-> Think the flag is somewhere in there. Would you help me find it?\
+> Think the flag is somewhere in there. Would you help me find it?
 > https://ctflearn.com/challenge/download/890
 
 ## Solution
@@ -42,27 +42,27 @@ unrar x 28E4B
 ```
 ![Screenshot](unrar1.png)
 
-here we got two more files , lets try using file on these
+here we got two more files, so we use file on these
 ```
 file y0u_4r3_cl0s3.rar purrr_2.mp3
 ```
 ![Screenshot](file2.png)
 we can see here that the rar file is only showing as data which means it is corrupted.
 
-When we see its hex in hexedit we see that the hex header is wrong 
-and change it to its correct value **52 61 72 21 1A 07 01 00**
+When we see it's hex value in **hexedit** we see that the hex header is wrong 
+and then we change it to its correct value that is **52 61 72 21 1A 07 01 00**
 ```
 hexedit y0u_4r3_cl0s3.rar
 ```
 ![Screenshot](hexedit1.png)
 ![Screenshot](hexedit2.png)
 
-now after using files we see that the file is showing correctly, so we try extracting it .....
+now after using files we see that the rar file is showing correctly, so we try extracting it .....
 
 ![Screenshot](unrar2.png)
 
 **But now it start asking for password.**
-To find the password we use **audio visualizer on 'purrr_2.mp3' in spectogram mode.** I used audacity and we get the password **sp3ctrum_1s_y0ur_fr13nd**
+To find the password we use **audio visualizer on 'purrr_2.mp3' in spectogram mode.** I used audacity which got us the password **sp3ctrum_1s_y0ur_fr13nd**
 
 ![Screenshot](spectogram.JPG)
 
@@ -73,7 +73,7 @@ using password **sp3ctrum_1s_y0ur_fr13nd**
 
 ![SS](unrar3.png)
 
-here we get a file **f1n4lly.txt**. Now we cat the file to get some encrpted text.
+here we get a file **f1n4lly.txt**. Now we **cat** the filewhich give us some encrypted text.
 ```
 cat f1n4lly.txt
 ```
@@ -82,7 +82,7 @@ cat f1n4lly.txt
 
 **ZjByM241MWNzX21hNXQzcg==**
 
-Here we notice that the encrpted text have two **equalto(==)** signs at the end so we try decrpting it with base64 online.
+Here we notice that the encrypted text have two **equalto(=)** signs at the end so we try decrypting it with **base64** online.
 
 https://www.base64decode.org/ 
 
