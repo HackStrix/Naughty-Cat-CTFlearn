@@ -34,6 +34,7 @@ we get 3 files here, lets detect these file types using **file**
 file *
 ```
 ![SS](file1.png)
+
 we see here a rar file, let extract it...
 
 ```
@@ -56,24 +57,29 @@ hexedit y0u_4r3_cl0s3.rar
 ![Screenshot](hexedit1.png)
 ![Screenshot](hexedit2.png)
 
-now after using files we see that the file is showing correctly, so we try extracting it ..... 
+now after using files we see that the file is showing correctly, so we try extracting it .....
+
 ![Screenshot](unrar2.png)
 
 **But now it start asking for password.**
 To find the password we use **audio visualizer on 'purrr_2.mp3' in spectogram mode.** I used audacity and we get the password **sp3ctrum_1s_y0ur_fr13nd**
+
 ![Screenshot](spectogram.JPG)
 
 ```
 unrar x y0u_4r3_cl0s3.rar 
 ```
-using password **sp3ctrum_1s_y0ur_fr13nd**
+using password **sp3ctrum_1s_y0ur_fr13nd*
+
 ![SS](unrar3.png)
 
 here we get a file **f1n4lly.txt**. Now we cat the file to get some encrpted text.
 ```
 cat f1n4lly.txt
 ```
+
 ![Screenshot](cat.png)
+
 **ZjByM241MWNzX21hNXQzcg==**
 
 Here we notice that the encrpted text have two **equalto(==)** signs at the end so we try decrpting it with base64 online.
