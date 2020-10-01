@@ -13,3 +13,10 @@ Naughty Cat Writeup
 
 ## Solution
 
+The solution is fairly lenghty
+First we use **binwalk** to detect the hidden files 
+
+```
+binwalk cut3_c4t.png
+```
+
