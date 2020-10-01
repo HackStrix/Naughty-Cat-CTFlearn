@@ -33,19 +33,19 @@ we get 3 files here, lets detect these file types using **file**
 ```
 file *
 ```
-![SS](Screenshot from 2020-10-01 16-08-32.png)
+![SS](file1.png)
 we see here a rar file, let extract it...
 
 ```
 unrar x 28E4B
 ```
-![Screenshot](Screenshot from 2020-10-01 16-09-21.png)
+![Screenshot](unrar1.png)
 
 here we got two more files , lets try using file on these
 ```
 file y0u_4r3_cl0s3.rar purrr_2.mp3
 ```
-![Screenshot](Screenshot from 2020-10-01 16-10-46.png)
+![Screenshot](file2.png)
 we can see here that the rar file is only showing as data which means it is corrupted.
 
 When we see its hex in hexedit we see that the hex header is wrong 
@@ -53,11 +53,11 @@ and change it to its correct value **52 61 72 21 1A 07 01 00**
 ```
 hexedit y0u_4r3_cl0s3.rar
 ```
-![Screenshot](Screenshot from 2020-10-01 16-11-15.png)
-![Screenshot](Screenshot from 2020-10-01 16-11-51.png)
+![Screenshot](hexedit1.png)
+![Screenshot](hexedit2.png)
 
 now after using files we see that the file is showing correctly, so we try extracting it ..... 
-![Screenshot](Screenshot from 2020-10-01 16-12-44.png)
+![Screenshot](unrar2.png)
 
 **But now it start asking for password.**
 To find the password we use **audio visualizer on 'purrr_2.mp3' in spectogram mode.** I used audacity and we get the password **sp3ctrum_1s_y0ur_fr13nd**
@@ -67,13 +67,13 @@ To find the password we use **audio visualizer on 'purrr_2.mp3' in spectogram mo
 unrar x y0u_4r3_cl0s3.rar 
 ```
 using password **sp3ctrum_1s_y0ur_fr13nd**
-![SS](Screenshot from 2020-10-01 16-17-47.png)
+![SS](unrar3.png)
 
 here we get a file **f1n4lly.txt**. Now we cat the file to get some encrpted text.
 ```
 cat f1n4lly.txt
 ```
-![Screenshot](Screenshot from 2020-10-01 16-18-17.png)
+![Screenshot](cat.png)
 **ZjByM241MWNzX21hNXQzcg==**
 
 Here we notice that the encrpted text have two **equalto(==)** signs at the end so we try decrpting it with base64 online.
