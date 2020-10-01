@@ -51,6 +51,7 @@ now after using files we see that the file is showing correctly, so we try extra
 
 But now it start asking for password.
 To find the password we use **audio visualizer on 'purrr_2.mp3' in spectogram mode.** I used audacity and we get the password **sp3ctrum_1s_y0ur_fr13nd**
+![Screenshot](spectogram.JPG)
 
 ```
 unrar x y0u_4r3_cl0s3.rar 
@@ -69,4 +70,5 @@ https://www.base64decode.org/
 
 after decypting we get the flag as
 
-#### **FLAG->** f0r3n51cs_ma5t3r
+### **FLAG** 
+```f0r3n51cs_ma5t3r```
