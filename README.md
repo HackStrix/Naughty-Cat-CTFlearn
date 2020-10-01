@@ -13,10 +13,23 @@ Naughty Cat Writeup
 
 ## Solution
 
-The solution is fairly lenghty
+The solution is fairly lenghty.
 First we use **binwalk** to detect the hidden files 
 
 ```
 binwalk cut3_c4t.png
 ```
+
+we get some file here, now lets extract those files
+
+```
+binwalk --dd='.*' cut3_c4t.png
+```
+
+we get 3 files here, lets detect these file types using **file**
+
+```
+file *
+```
+
 
