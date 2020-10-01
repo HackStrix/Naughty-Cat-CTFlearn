@@ -47,7 +47,9 @@ and change it to its correct value **52 61 72 21 1A 07 01 00**
 ```
 hexedit y0u_4r3_cl0s3.rar
 ```
-now after using files we see that the file is showing correctly, so we try extracting it ..... But now it start asking for password.
+now after using files we see that the file is showing correctly, so we try extracting it ..... 
+
+But now it start asking for password.
 To find the password we use **audio visualizer on 'purrr_2.mp3' in spectogram mode.** I used audacity and we get the password **sp3ctrum_1s_y0ur_fr13nd**
 
 ```
@@ -59,6 +61,11 @@ here we get a file **f1n4lly.txt**. Now we cat the file to get some encrpted tex
 ```
 cat f1n4lly.txt
 ```
-**ZjByM241MWNzX21hNXQzcg==**\n
+**ZjByM241MWNzX21hNXQzcg==**
+
 Here we notice that the encrpted text have two **equalto(==)** signs at the end so we try decrpting it with base64 online.
+
 https://www.base64decode.org/ 
+
+after decypting we get the flag as
+## f0r3n51cs_ma5t3r
