@@ -69,7 +69,7 @@ To find the password we use **audio visualizer on 'purrr_2.mp3' in spectogram mo
 ```
 unrar x y0u_4r3_cl0s3.rar 
 ```
-using password **sp3ctrum_1s_y0ur_fr13nd*
+using password **sp3ctrum_1s_y0ur_fr13nd**
 
 ![SS](unrar3.png)
 
